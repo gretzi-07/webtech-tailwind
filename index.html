@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events & Moments</title>
+    <title>Events & Moments - Cotización de Eventos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Events & Moments</h1>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+    <!-- Header / Navegación -->
+    <header class="absolute top-0 left-0 right-0 z-20 bg-transparent">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
+            <div class="text-2xl font-bold text-white tracking-wide">
+                <a href="#">Eventos & <span class="text-amber-400">Moments</span></a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-white font-medium">
+                <a href="#inicio" class="hover:text-amber-400 transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-amber-400 transition-colors">Servicios</a>
+                <a href="#nosotros" class="hover:text-amber-400 transition-colors">Nosotros</a>
+                <a href="#contacto" class="hover:text-amber-400 transition-colors">Contacto</a>
+            </div>
+            <div>
+                <a href="#cotizar" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold px-5 py-2.5 rounded-full shadow-lg transition-all transform hover:scale-105">
+                    Cotizar Ahora
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+            
+            <!-- 📷 Imagen de Fondo del Evento -->
+            <img 
+                src="./fondoEvent.jpg" 
+                alt="Imagen de fondo del evento" 
+                class="absolute inset-0 w-full h-full object-cover object-center"
+            />
+
+            <!-- Capa oscura de superposición (Overlay) para asegurar que el texto sea legible -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
+
+            <!-- Contenido principal del Hero -->
+            <div class="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
+                <span class="uppercase tracking-widest text-amber-400 font-semibold text-sm sm:text-base mb-3 block">
+                    Organización & Cotización de Eventos
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-md">
+                    Hacemos realidad tu próximo evento inolvidable
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Personaliza cada detalle de tu celebración o evento corporativo. Solicita tu cotización a medida en pocos minutos.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#cotizar" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 text-center">
+                        Solicitar Cotización
+                    </a>
+                    <a href="#servicios" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold px-8 py-4 rounded-xl transition-all text-center">
+                        Explorar Servicios
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
